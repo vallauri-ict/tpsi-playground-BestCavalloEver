@@ -1,0 +1,117 @@
+#page{
+    width: 1500px;
+    height: 1000px;
+    position: relative;
+}
+#topic{
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+	position:absolute;
+	margin-left:50px;
+	margin-top:25px;
+}
+
+#container{
+    width: 500px;
+    height:500px;
+    text-align: center;
+	position:absolute;
+    left: 650px;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+#title{
+    text-align: center;
+}
+
+#preGame{
+    width:200px;
+    height:200px;
+    margin:0 auto;
+    border-color:red;
+    position: relative;
+}
+#choose{
+    position: absolute;
+    top:100px;
+}
+
+#custom{
+    width:1000px;
+    position: absolute;
+    top:150px;
+}
+
+#mines{
+    position: absolute;
+    top:200px;
+}
+select,p{
+    display: inline;
+    vertical-align: top;
+    text-align: center;
+}
+
+body{
+	background-color:#1fd16f;
+}
+
+.timer{
+	margin-top: 80px;
+	display: inline;
+	position: absolute;
+	margin-left:95px;
+}
+
+#timer4{
+	margin-left:45px;
+}
+
+#timer3{
+	margin-left:65px;
+}
+
+#timer2{
+	margin-left:85px;
+}
+
+#timer1{
+	margin-left:105px;
+}
+
+#band{
+	margin-top: 80px;
+	display: inline;
+	position: absolute;
+	margin-left:-135px;
+}
+
+#bandImg{
+	margin-top: 78px;
+	display: inline;
+	position: absolute;
+	margin-left:-165px;
+
+}
+
+#tim3{
+	margin-top:79px;
+	margin-left:61px;
+}
+
+#tim2{
+	margin-top:79px;
+	margin-left:81px;
+}
+
+#tim1{
+	margin-top:79px;
+	margin-left:101px;
+}
+
+
