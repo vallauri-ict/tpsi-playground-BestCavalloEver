@@ -1,9 +1,19 @@
+<!--
 <h1>5^C - 2020/21</h1>
 <h3>Introduzione a Angular e Typescript</h3>
 <p>Primo esempio di "databinding", io sono: {{myName}}</p>
 <button (click)="changeName()">CAMBIAMI NOME</button>
+-->
 
 <hr>
-
-<h3>UTILIZZO DEI COMPONENTI</h3>
-<app-server></app-server>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>UTILIZZO DEI COMPONENTI: </h3>
+            <app-servers></app-servers> <!--Se lo creo come selettore HTML-->
+            <!--<div app-server></div>--> <!--Se lo creo come attributo-->
+            <!--<div class="app-servers"></div>--> <!--Se lo creo come classe-->
+        </div>
+    </div>
+</div>
