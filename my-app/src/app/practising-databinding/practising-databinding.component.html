@@ -1,0 +1,12 @@
+<h4>INSTRUCTION</h4>
+<ol>
+    <li>Add a input field which update the property "username" with the <b>two-way databinding</b>.</li>
+    <li>Output the "username" property below the input field using string interpolation.</li>
+    <li>Add a button only enabled if the username is not an empty string.</li>
+    <li>Upon <b>click the button</b> the "username" should be reset to an empty string.</li>
+</ol>
+<h4>RESULTS</h4>
+
+<input type="text" class="form-control" (input)="checkUsername()" [(ngModel)]="username">
+<p> Username = {{username}}</p>
+<button class="btn btn-primary" [disabled]="usernameEmpty" (click)="onResetUsername()">Reset Username</button>
