@@ -1,1 +1,5 @@
-<p>Server with ID {{serverId}} is {{getServerStatus()}}</p> <!-- 2 Interpolazioni di stringhe, una legata ad una variabile e l'altra ad un metodo-->
+<!--ngStyle direttiva di angular-->
+<p [ngStyle] ="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}">
+    Server with ID {{ serverId }} is {{ serverStatus }}
+</p> 

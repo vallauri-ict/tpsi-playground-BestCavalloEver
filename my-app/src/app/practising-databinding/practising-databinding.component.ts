@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PractisingDatabindingComponent implements OnInit {
 
-  username:string;
+  username:string = "";
   usernameEmpty:boolean = true;
   constructor() { 
   };
@@ -15,15 +15,12 @@ export class PractisingDatabindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onResetUsername(){
+  /*onResetUsername(){
     this.username = "";
     this.usernameEmpty = true;
-  }
+  }*/
 
-  checkUsername(){
-    if(this.username != "")
-      this.usernameEmpty = false;
-    else
-      this.usernameEmpty = true;
-  }
+ /*checkUsername(){
+    this.usernameEmpty = this.username != "" ? false : true;
+  }*/
 }

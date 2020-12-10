@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+
 @Component({
     selector: 'app-server',
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styleUrls: ['./server.component.css']
 })
 
 export class ServerComponent {
@@ -10,6 +12,7 @@ export class ServerComponent {
 
     constructor(){
         this.serverId = this.getRandomInt(1,100);
+        this.getServerStatus();
     }
 
     getServerStatus(){
@@ -19,5 +22,9 @@ export class ServerComponent {
 
     getRandomInt(min, max){
         return Math.floor(Math.random() * (max-min+1)) + min;
+    }
+
+    getColor(){
+        return this.serverStatus == "online" ? "#009900" : "red";
     }
 }

@@ -7,6 +7,6 @@
 </ol>
 <h4>RESULTS</h4>
 
-<input type="text" class="form-control" (input)="checkUsername()" [(ngModel)]="username">
+<input type="text" class="form-control" [(ngModel)]="username">
 <p> Username = {{username}}</p>
-<button class="btn btn-primary" [disabled]="usernameEmpty" (click)="onResetUsername()">Reset Username</button>
+<button class="btn btn-primary" [disabled]="username === ''" (click)="username = ''">Reset Username</button>
